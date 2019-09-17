@@ -1,0 +1,153 @@
+/* Global Styles */
+:root {
+    --gold: #d79942;
+    --light: #fff;
+    --dark: #020303;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'FuturaPT', serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-align: center;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Text Styles*/
+h1 {
+    margin-top: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Gin-Rough';
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+h1:after {
+    display: block;
+    margin: 0 auto;
+    content: ' ';
+    background-image: url('./img/deco.svg');
+    background-size: 129px 13px;
+    height: 13px;
+    width: 129px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column
+}
+
+.half {
+    width: 50%;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Overlay */
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Buttons */
+.btn {
+    line-height: 14px;
+    border-width: 2px;
+    padding: 14px 20px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn-gold {
+    border: 2px solid var(--gold);
+    background: var(--gold);
+    color: var(--light);
+}
+
+.btn-gold:hover {
+    background: none;
+    color: var(--gold);
+}
+
+/* Backgrounds */
+.background-gold {
+    background: var(--gold);
+}
+
+/* Links */
+.links {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.links a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--light) !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.links a:hover {
+    color: var(--gold) !important;
+}
+
+/* Landing */
+.landing {
+    position: relative;
+    background: url('./img/landing.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.logo-landing {
+    width: auto;
+}
+
+/* About */
+.about {
+    height: 100vh;
+}
+
+.about-text {
+    font-family: 'Amiri', serif;
+    padding: 0 60px;
+}
+
+.about-text p {
+    line-height: 1.7em;
+}
